@@ -1,0 +1,66 @@
+/* 
+	Copyright (c) Flying Colors
+	Author: Harvey Moony
+ 	File: General styles
+ */
+
+* {margin: 0; padding: 0;}
+body {font: 12px/18px Arial, Tahoma, Verdana, sans-serif; width: 100%; background: url(../img/bkg.png) repeat #006FBA;}
+a {color: blue; outline: none; text-decoration: underline}
+a:hover {text-decoration: none}
+p {margin: 0 0 18px}
+img {border: none}
+input {vertical-align: middle}
+#wrapper {width: 680px; margin: 0 auto}
+
+.btn{display: inline-block; text-decoration: none; border: 1px solid #0061B3; border-radius: 4px; background:none; padding:0; margin:0; width:auto; overflow:visible; text-align:center; white-space:nowrap; height:22px; line-height:20px}
+	.btn span{padding-left:20px; background:url(../img/elements/btn_bkg.gif) repeat-x 0 0}	
+		.btn p{padding-right:20px; background:url(../img/elements/btn_bkg.gif) no-repeat 100% 0; color: #fff; font: bold 11px/20px Tahoma}
+	.btn span, .btn p{display:block; height:22px; line-height:20px; margin:0}
+	.btn:hover span, .btn:hover p{background: url(../img/elements/btn_bkg_hover.gif) repeat-x}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {height: 135px;}
+
+#logo{padding-top: 40px}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {display: inline-block; position: relative;}
+
+#ajax-info-block{position: absolute; overflow: hidden; width: 190px; height: 190px; display: none; z-index: 15; background-color: #EEF6F9; opacity: 0; padding: 15px}
+	#close-info-block{position: absolute; right: 10px; top: 10px; cursor: pointer;}
+	#content-info-block{}
+#ajax-info-block h3{text-align: center; font: bold 16px/40px Tahoma}
+
+/* Menu
+-------------------------------------*/
+#menu li{width: 220px; height: 220px; float: left; list-style-type: none; background: #0055AB; margin: 0 8px 8px 0; position: relative; z-index: 10}
+.last{margin-right: 0 !important}
+
+/* Slider */
+#slider{width: 448px !important; height: 220px}
+
+
+/* Entrance and Registration */
+#ent-reg{background: #EEF6F9 !important; overflow: hidden; position: relative}
+	#ent-reg-ico{position: absolute; left: 0; cursor: pointer}
+	#entrance{padding: 27px 29px; margin-bottom: 20px}
+		#ent-reg input{padding: 0 5px; width: 150px; height: 22px; border: 1px solid #99BAC5; font: 9px/22px Tahoma; color: #484C50; border-radius: 1px}
+		#login{margin-bottom: 10px}
+		#pass{}
+		#remember{display: block; color: #0078B6; font: 10px Tahoma; margin-top: 12px; float: left}
+		#entrance-btn{width: 70px; margin-top: 8px; float: right;}
+	#ent-reg-line{border-bottom: 1px dotted #909090; margin: 0 12px}
+	#registration{text-align: center; margin-top: 12px}
+	#registration a{color: #0079C7; font: bold 13px Tahoma}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {height: 20px; color: #fff; font-family: Tahoma; margin-top: 60px}
+#footer a{text-decoration: none; color: #fff}
+#footer a:hover{text-decoration: underline;}
+#footer pre{display: inline;}
+#copy {float: right}

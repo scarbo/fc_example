@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * Implements hook_menu
+ */
+function s2e_page_menu() {
+  $items['json/%ajax_url'] = array(
+    'title' => 'Json content',
+    'page callback' => 'json_content_page',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+    'file' => 's2e_page.page.inc',
+    'type' => MENU_CALLBACK,
+  );
+  //
+  return $items;
+}
+
+/**
+ * Implements hook_load
+ */
+function ajax_url_load($url) {
+  global $language;
+  $lng = $language->language;
+  $nid = 0;
+  //
+  switch ($url) {
+    case 'cost':
+      $nid = $lng == 'ru' ? 8 : 0;
+      break;
+
+    case 'faq':
+      $nid = $lng == 'ru' ? 9 : 0;
+      break;
+
+    case 'support':
+      $nid = $lng == 'ru' ? 10 : 0;
+      break;
+
+    case 'events':
+      break;
+  }
+  //
+  return $nid;
+}
